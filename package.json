@@ -1,5 +1,6 @@
 {
-  "name": "http://abdelaziz123456.github.io/reminder-app",
+  "homepage":"http://abdelaziz123456.github.io/reminder-app",
+  "name": "reminder-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
