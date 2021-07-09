@@ -1,7 +1,7 @@
 
 import React,{Component} from "react";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import image from './images.png'
+import image from './images (2).png'
 
 
 import {connect} from 'react-redux' ;
@@ -72,7 +72,7 @@ class App extends Component{
                         {this.render_Reminder()}
 
 
-                        <button className=" btn btn-danger w-100 clear-reminder" onClick={()=>this.props.clear_Reminder()}>Clear Reminders</button>
+                        <button className=" btn btn-primary w-100 clear-reminder" onClick={()=>this.props.clear_Reminder()}>Clear Reminders</button>
 
                         
 
