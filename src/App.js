@@ -29,7 +29,7 @@ class App extends Component{
                              <li key={reminder.id}  className="list-group-item">
                                  <div>{reminder.text}</div>
                                  <div>{moment(new Date(reminder.date)).fromNow()}</div>
-                                 <div className=" btn btn-danger closeIcon" onClick={()=>this.props.remove_Reminder(reminder.id)}>X</div>
+                                 <div className=" btn  closeIcon" onClick={()=>this.props.remove_Reminder(reminder.id)}>X</div>
                              </li>
                          )
                      })
@@ -66,13 +66,13 @@ class App extends Component{
                             this.props.add_Reminder(this.state.text,this.state.date)
                             this.setState({text:'',date:''})
                         }}
-                        className=" btn btn-primary w-100">Add Reminders</button>
+                        className=" btn special  w-100">Add Reminders</button>
                         <br />
                         <br />
                         {this.render_Reminder()}
 
 
-                        <button className=" btn btn-primary w-100 clear-reminder" onClick={()=>this.props.clear_Reminder()}>Clear Reminders</button>
+                        <button className=" btn special w-100 clear-reminder" onClick={()=>this.props.clear_Reminder()}>Clear Reminders</button>
 
                         
 
